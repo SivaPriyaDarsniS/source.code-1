@@ -1,2 +1,11 @@
-# source.code
-Every source code will be push, commit, and understand in here.
+# Welcome to //SOURCE.CODE
+Every source code will be push, commit and understand in here.
+<br>
+<hr>
+<h3>// COMMIT DESCRIPTION</h3>
+Commit form: CODE.REFTIME.DESCRIPTION<br>
+Example: DB.2056.ADD TESTCASE
+<h3>CODE SIGNATURE</h3>
+  FT: First time to push source.code to git.<br>
+  DB: Debug from previous time at the same souce.code file.<br>
+  OOP: Change source to Oriented-Object Program.
