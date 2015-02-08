@@ -8,18 +8,24 @@ int main(void)
     // starting program
     do
     {
+        // input data to program
         scanf("%d %d", &department_date, &arrived_date);
-        if (arrived_date != 31 && department_date <= arrived_date)
+        
+        // starting condition
+        if (arrived_date < 31 && department_date <= arrived_date && department_date > 0)
         {
             for (i = department_date; i <= arrived_date; i++)
             {
                 // this is information: she have to use 3 shoes in each day.
-                if (i == 9 || i == 18 || i == 27)
+
+                // if date was 9, 18 or 27, she will choose boots.
+                if (i % 9 == 0)
                 {
                     boots += 3;
                 }
                 else
                 {
+                    // if date was Even, she will choose 1 flipflop and sport shoes twice
                     if (i % 2 == 0)
                     {
                         flipflop += 1;
@@ -40,9 +46,10 @@ int main(void)
         }
         else
         {
-            printf("Data Error\n");
+            printf("Date Error\n");
         }
     }
     while (1);
+    // 1 mean True
 }
         
