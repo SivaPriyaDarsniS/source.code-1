@@ -1,0 +1,48 @@
+#include <stdio.h>
+int main(void)
+{
+    // define neccessary variables
+    int i, department_date, arrived_date;
+    int sport_shoes = 0, boots = 0, flipflop = 0;
+    
+    // starting program
+    do
+    {
+        scanf("%d %d", &department_date, &arrived_date);
+        if (arrived_date != 31 && department_date <= arrived_date)
+        {
+            for (i = department_date; i <= arrived_date; i++)
+            {
+                // this is information: she have to use 3 shoes in each day.
+                if (i == 9 || i == 18 || i == 27)
+                {
+                    boots += 3;
+                }
+                else
+                {
+                    if (i % 2 == 0)
+                    {
+                        flipflop += 1;
+                        sport_shoes += 2;
+                    }
+                    else
+                    {
+                        sport_shoes += 3;
+                    }
+                }
+            }
+            
+            // print output
+            printf("sport shoe %d\n", sport_shoes);
+            printf("boots %d\n", boots);
+            printf("flipflop %d\n", flipflop);
+            break;
+        }
+        else
+        {
+            printf("Data Error\n");
+        }
+    }
+    while (1);
+}
+        
